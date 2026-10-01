@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Knightlight: run", "type": "shell", "command": "sh ./run.sh",
+      "windows": { "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./project.ps1 run" },
+      "problemMatcher": [], "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "Knightlight: test", "type": "shell", "command": "sh ./test.sh",
+      "windows": { "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./project.ps1 test" },
+      "problemMatcher": [], "group": "test"
+    }
+  ]
+}
